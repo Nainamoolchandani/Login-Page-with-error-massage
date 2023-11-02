@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="javascpt.js">
+  
+    <title>LOGIN PAGES</title>
+</head>
+<body>
+    <div class ="container">
+        <div class = "form-box">
+            <form action="" name="formfill" onsubmit="return validation()">
+                <h2>REGISTRATION</h2>
+                <p id = "result"></p>
+                <div class = "input-box">
+                    <i class='bx bx-user'></i>
+                    <input type="text" name="username" placeholder="username">
+                </div>
+                <div class = "input-box">
+                    <i class='bx bxs-envelope'></i>
+                    <input type="Email" name="Email" placeholder="Email">
+                </div>
+                <div class = "input-box">
+                    <i class='bx bx-lock-alt'></i>
+                    <input type="Password" name="Password" placeholder="Password">
+                </div>
+                <div class = "input-box">
+                    <i class='bx bx-lock-alt'></i>
+                    <input type="Password" name="CPassword" placeholder="Confirm Password">
+                </div>
+                <div class = "button">
+                    <input type="submit" class="btn"  onclick="validation()" register>
+                </div>
+                <div class="group">
+                    <span><a href="a" > forget Password</a></span>
+                    <span><a href="a"> LOGIN </a></span>
+                </div>
+            </form>
+        </div>
+        <div class="popup" id="popup">
+            <H2>THANK YOU </H2>
+            <p>YOUR REGISTRATION HAS COMPLETED</p>
+            <a href="login.html"><button onclick="CloseSlide()">OK</button></a>
+            
+
+
+        </div>
+    </div>
+    <script src="javascpt.js"></script>
+</body>
+</html>
